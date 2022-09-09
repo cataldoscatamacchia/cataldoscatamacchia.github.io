@@ -1,0 +1,521 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #818181;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: yellow;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+svg {
+    pointer-events: none;
+    user-select: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 24px;
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* HEADER */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header nav a {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-logo a,
+.ft-logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-logo a:hover,
+.ft-logo a:hover {
+    color: yellow;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav .nav-list ul li {
+    margin-left: 30px;
+}
+
+.nav-menu span {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown svg {
+    fill: white;
+    width: 15px;
+}
+
+.dropdown a:focus>svg {
+    transition: .5s;
+    transform: rotateZ(180deg);
+}
+
+.dropbtn,
+li.dropdown {
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #181818;
+    min-width: 160px;
+    z-index: 1;
+    animation: fadeIn 0.1s ease-in both;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+/* SIDENAV */
+details summary {
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #818181;
+}
+
+details ul {
+    padding: 10px;
+}
+
+details ul li a {
+    font-size: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+summary {
+    padding: 8px 8px 8px 32px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover,
+.sidenav details summary:hover {
+    color: yellow;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME */
+#presentation ::selection {
+    background-color: red;
+    color: white;
+}
+
+#presentation {
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#presentation .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#presentation .flex-item {
+    flex: 50%;
+}
+
+#presentation .flex-item img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#presentation .btn {
+    all: unset;
+}
+
+#presentation .btn {
+    margin-top: 30px;
+    border: 1px solid red;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* AUTORE */
+.autore .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.autore .flex-item {
+    flex: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.autore .description,
+.autore .image figure img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+.autore .description p {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* RECENSIONI */
+
+.review h2 {
+    margin-bottom: 20px;
+}
+
+.review blockquote {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LIBRI */
+.book {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+    margin: auto;
+    line-height: 30px;
+}
+
+.book img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.book figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 60px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.book hr p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* DOVE ACQUISTARE */
+
+.dove-acquistare .stores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dove-acquistare .stores2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dove-acquistare a {
+    margin-bottom: 100px;
+}
+
+.dove-acquistare a svg {
+    width: 200px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #181818;
+    margin-top: 120px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ft-logo {
+    margin-bottom: 20px;
+}
+
+.foot-top a,
+.foot-top ul li {
+    line-height: 30px;
+}
+
+.ft-item {
+    margin-bottom: 50px;
+}
+
+.ft-item h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.ft-item .social {
+    display: flex;
+}
+
+.ft-item .social li {
+    margin-right: 20px;
+}
+
+.social .instagram {
+    width: 28px;
+    display: inline-block;
+}
+
+.social .facebook {
+    width: 32px;
+    display: inline-block;
+}
+
+svg {
+    fill: #818181;
+    transition-duration: 0.4s;
+}
+
+a:hover>svg {
+    fill: yellow;
+}
+
+.foot-bottom small {
+    font-size: 12px;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.policies {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,239 @@
+/** Extra small devices (phones, 600px and down) **/
+@media only screen and (max-width: 600px) {
+    header nav {
+        vertical-align: text-bottom;
+    }
+
+    .nav-logo a {
+        font-size: 21px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    h1 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 45px;
+    }
+
+    #presentation .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .autore .flex-container {
+        flex-direction: column;
+    }
+
+
+    .book {
+        width: 100%;
+    }
+
+    .dove-acquistare .stores,
+    .dove-acquistare .stores2 {
+        flex-direction: column;
+    }
+
+    .foot-top {
+        flex-direction: column;
+    }
+
+    .ft-item {
+        flex-basis: 100%;
+    }
+
+    .policies {
+        justify-content: space-between;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    h1 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 45px;
+    }
+
+    #presentation .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .autore .flex-container {
+        flex-direction: column;
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    .dove-acquistare .stores,
+    .dove-acquistare .stores2 {
+        flex-direction: column;
+    }
+
+    .foot-top {
+        flex-direction: row;
+    }
+
+    .ft-item {
+        flex-basis: 100%;
+    }
+
+    .policies {
+        justify-content: space-around;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    h1 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 45px;
+    }
+
+    #presentation .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .autore .flex-container {
+        flex-direction: column;
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    .dove-acquistare .stores,
+    .dove-acquistare .stores2 {
+        flex-direction: column;
+    }
+
+    .foot-top {
+        flex-direction: row;
+    }
+
+    .ft-item {
+        flex-basis: 50%;
+    }
+
+    .policies {
+        justify-content: space-around;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        padding: 120px;
+        font-size: 70px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+
+
+    #presentation .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .autore .flex-container {
+        flex-direction: row;
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    .dove-acquistare .stores,
+    .dove-acquistare .stores2 {
+        flex-direction: column;
+    }
+
+    .foot-top {
+        flex-direction: row;
+    }
+
+    .ft-item {
+        flex-basis: 50%;
+    }
+
+    .policies {
+        justify-content: space-around;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 70px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .nav-list {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    #presentation .flex-container {
+        flex-direction: row;
+    }
+
+    .autore .flex-container {
+        flex-direction: row;
+    }
+
+    .book {
+        width: 50%;
+    }
+
+    .dove-acquistare .stores,
+    .dove-acquistare .stores2 {
+        flex-direction: row;
+    }
+
+    .foot-top {
+        flex-direction: row;
+    }
+
+    .ft-item {
+        flex-basis: 33.33%;
+    }
+
+    .policies {
+        justify-content: space-around;
+    }
+}
