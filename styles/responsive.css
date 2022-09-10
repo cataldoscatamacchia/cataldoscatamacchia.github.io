@@ -41,6 +41,7 @@
 
     .book figcaption {
         font-size: 20px;
+        line-height: 30px;
     }
 
     .dove-acquistare .stores,
@@ -95,6 +96,7 @@
 
     .book figcaption {
         font-size: 20px;
+        line-height: 30px;
     }
 
     .dove-acquistare .stores,
@@ -148,7 +150,8 @@
     }
 
     .book figcaption {
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .dove-acquistare .stores,
@@ -201,7 +204,8 @@
     }
 
     .book figcaption {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .dove-acquistare .stores,
@@ -255,7 +259,8 @@
     }
 
     .book figcaption {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .dove-acquistare .stores,
