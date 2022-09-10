@@ -19,7 +19,11 @@
     h1 {
         padding-top: 70px;
         padding-bottom: 70px;
-        font-size: 45px;
+        font-size: 30px;
+    }
+
+    #presentation h1 {
+        font-size: 20px;
     }
 
     #presentation .flex-container {
@@ -66,7 +70,11 @@
     h1 {
         padding-top: 70px;
         padding-bottom: 70px;
-        font-size: 45px;
+        font-size: 30px;
+    }
+
+    #presentation h1 {
+        font-size: 20px;
     }
 
     #presentation .flex-container {
@@ -112,7 +120,11 @@
     h1 {
         padding-top: 70px;
         padding-bottom: 70px;
-        font-size: 45px;
+        font-size: 30px;
+    }
+
+    #presentation h1 {
+        font-size: 20px;
     }
 
     #presentation .flex-container {
@@ -149,7 +161,7 @@
 @media only screen and (min-width: 992px) {
     h1 {
         padding: 120px;
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .nav-list {
@@ -160,7 +172,9 @@
         display: block;
     }
 
-
+    #presentation h1 {
+        font-size: 30px;
+    }
 
     #presentation .flex-container {
         flex-direction: column-reverse;
@@ -195,7 +209,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     h1 {
-        font-size: 70px;
+        font-size: 50px;
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -206,6 +220,10 @@
 
     .nav-menu {
         display: none;
+    }
+
+    #presentation h1 {
+        font-size: 30px;
     }
 
     #presentation .flex-container {
