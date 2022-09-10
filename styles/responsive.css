@@ -39,6 +39,10 @@
         width: 100%;
     }
 
+    .book figcaption {
+        font-size: 20px;
+    }
+
     .dove-acquistare .stores,
     .dove-acquistare .stores2 {
         flex-direction: column;
@@ -87,6 +91,10 @@
 
     .book {
         width: 100%;
+    }
+
+    .book figcaption {
+        font-size: 20px;
     }
 
     .dove-acquistare .stores,
@@ -139,6 +147,10 @@
         width: 100%;
     }
 
+    .book figcaption {
+        font-size: 20px;
+    }
+
     .dove-acquistare .stores,
     .dove-acquistare .stores2 {
         flex-direction: column;
@@ -186,6 +198,10 @@
 
     .book {
         width: 100%;
+    }
+
+    .book figcaption {
+        font-size: 40px;
     }
 
     .dove-acquistare .stores,
@@ -236,6 +252,10 @@
 
     .book {
         width: 50%;
+    }
+
+    .book figcaption {
+        font-size: 40px;
     }
 
     .dove-acquistare .stores,
