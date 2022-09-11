@@ -98,7 +98,7 @@ header nav .nav-list ul li {
 
 .dropdown svg {
     fill: white;
-    width: 15px;
+    width: 10px;
 }
 
 .dropdown a:focus>svg {
