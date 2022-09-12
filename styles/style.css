@@ -509,6 +509,24 @@ cite {
     width: 200px;
 }
 
+/* COOKIE POLICY */
+
+.cookie-policy h2 {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.cookie-policy h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.cookie-policy .qea{
+    margin-bottom: 50px;
+}
+
+
+
 /* FOOTER */
 footer {
     background-color: #181818;
