@@ -87,7 +87,27 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <h2 style="margin-top: 50px">7</h2>
+                    <p style="margin-top: 25px">Il booktrailer del nuovo libro di Cataldo Scatamacchia</p>
+                    <div style="margin-top: 50px" class="video" id="player"></div>
 
+
+                    <div id="scroll-container" style="margin-top: 50px; margin-bottom: 50px;">
+                        <div id="scroll-text">
+                            <a href="mailto:info@veronicarossidesign.com">Veronica Rossi - Graphic Designer</a><br>
+                            <a href="mailto:cattaneomaux@hotmail.com">Maurizio Cattaneo - Voice actor</a><br>
+                            <a href="mailto:marianid@mac.com">Danilo Mariani - Musician and Composer</a><br>
+                            <a href="mailto:manuelbucci99@gmail.com">Manuel Bucci - Movie Director and Actor</a><br>
+                            <a href="mailto:system12dev@outlook.com">System12 - Webmaster</a><br>
+                            <a href="mailto:coltellaro28@yahoo.com">Dennis Coltellaro - Videomaker and Camera
+                                Operator</a><br>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
             </section>
         </div>
     </main>
@@ -156,5 +176,123 @@
 <style>
     footer {
         margin-top: 0;
+    }
+</style>
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'ew1aSUfXGKU',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+<style>
+    .video {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .video p {
+        font-size: 20px;
+    }
+</style>
+<style>
+    #scroll-container {
+        border-radius: 5px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    #scroll-container a {
+        line-height: 30px;
+    }
+
+    #scroll-text {
+        height: 100%;
+        text-align: center;
+
+        /* animation properties */
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+
+        -moz-animation: my-animation 5s linear infinite;
+        -webkit-animation: my-animation 5s linear infinite;
+        animation: my-animation 5s linear infinite;
+    }
+
+    /* for Firefox */
+    @-moz-keyframes my-animation {
+        from {
+            -moz-transform: translateY(100%);
+        }
+
+        to {
+            -moz-transform: translateY(-100%);
+        }
+    }
+
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+        from {
+            -webkit-transform: translateY(100%);
+        }
+
+        to {
+            -webkit-transform: translateY(-100%);
+        }
+    }
+
+    @keyframes my-animation {
+        from {
+            -moz-transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        to {
+            -moz-transform: translateY(-100%);
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
     }
 </style>
